@@ -1,0 +1,44 @@
+.oval-button {
+  border-radius: 30px; /* Esto hace que el botón sea ovalado */
+  padding: 10px 20px;
+  background-color: rgb(12, 0, 56);
+  color: rgb(196, 255, 253);
+  /* Borde definido */
+  border: 1px solid rgb(196, 255, 253);
+}
+
+.oval-button:hover {
+  background-color: rgb(196, 255, 253);
+  color: rgb(12, 0, 56);
+}
+
+.menu-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    /* Asegurar el centrado en dispositivos móviles */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: bisque;
+  }
+  
+  nav {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgb(30, 9, 121) 50%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    padding: 15px;
+    position: relative;
+   
+  }

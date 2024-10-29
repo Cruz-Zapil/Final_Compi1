@@ -1,0 +1,78 @@
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* Estilo para el editor */
+.editor-container {
+  display: flex;
+  border: 1px solid #ccc;
+  height: 500px;
+  
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.line-numbers {
+  width: 60px;
+  background-color: rgb(19, 19, 20);
+  text-align: right;
+  padding: 5px;
+  color: #ccc;
+  overflow-y: hidden; /* Ocultamos el scrollbar del contador de líneas */
+  height: 100%;
+}
+
+.line-numbers pre {
+  margin: 0;
+  font-family: monospace;
+  font-size: 19px;
+}
+
+.code-area {
+  width: 100%;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 19px;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  background-color: rgb(19, 19, 60);
+  color: bisque;
+}
+
+.cursor-position {
+  font-size: 19px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Estilo para la barra de desplazamiento general (scrollbar) */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho del scrollbar vertical */
+  height: 8px; /* Altura del scrollbar horizontal */
+}
+
+/* Track (la pista donde se mueve la barra) */
+::-webkit-scrollbar-track {
+  background: #ccc; /* Color de fondo del track */
+  border-radius: 10px;
+}
+
+/* Handle (la barra de desplazamiento en sí) */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del scrollbar */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid #f1f1f1; /* Espacio alrededor de la barra */
+}
+
+/* Handle cuando se pasa el mouse encima */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color de la barra al pasar el mouse */
+}
+

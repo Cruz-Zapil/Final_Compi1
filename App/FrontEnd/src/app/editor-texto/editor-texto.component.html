@@ -1,0 +1,24 @@
+<div class="container">
+  <!-- Área de edición de texto y numeración de líneas -->
+  <div class="editor-container">
+    <!-- Contador de líneas -->
+    <div id="lineNumbers" class="line-numbers">
+      <pre id="lineNumbersContent"></pre>
+    </div>
+    
+    <!-- Área de texto -->
+    <textarea
+      id="codeArea"
+      class="code-area"
+      (input)="updateLineNumbers()"
+      (scroll)="syncScroll()"
+      (keyup)="updateCursorPosition($event)"
+      (click)="updateCursorPosition($event)">
+    </textarea>
+  </div>
+
+  <!-- Información de posición del cursor -->
+  <div id="cursorPosition" class="cursor-position">
+    Línea: 1, Columna: 1
+  </div>
+</div>
